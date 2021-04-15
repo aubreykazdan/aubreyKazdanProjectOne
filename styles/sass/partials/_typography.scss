@@ -1,0 +1,22 @@
+// font-family: 'Playfair Display', serif;
+// font-family: 'Roboto', sans-serif;
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    @include fontStyles(2rem, 32px);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    @include fontStyles(138px, 0px);
+}
+
+h2 {
+    text-transform: uppercase;
+}
