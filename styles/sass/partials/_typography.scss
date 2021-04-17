@@ -11,12 +11,63 @@ body {
     @include fontStyles(2rem, 32px);
 }
 
+// APPLYING UPPERCASE TO TITLES + BUTTONS
+h1,
+h2,
+a,
+button {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+// SET STYLING FOR TITLE ELEMENTS
+
 h1 {
     text-align: center;
-    text-transform: uppercase;
-    @include fontStyles(138px, 0px);
+    @include fontStyles(13.8rem, 0px);
 }
 
 h2 {
+    @include fontStyles(4.2rem, 0px);
+    text-align: center;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+// NAV BAR HEADER STYLES
+// REPLACE DEFAULT STYLINGS ON NAV BAR ELEMENTS
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 5px;
+    list-style: none;
+}
+
+// .navBar li {
+//     background: red;
+// }
+
+a {
+    margin: 1.5rem 2.5rem;
+    padding-bottom: 10px;
+    @include fontStyles(2rem, 29px);
+    letter-spacing: 1px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    border-bottom: 4px solid $buttonsNavLogosColor;
+    margin-bottom: 2%;
+}
+
