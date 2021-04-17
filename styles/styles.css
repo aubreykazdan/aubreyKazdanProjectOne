@@ -268,22 +268,6 @@ button {
   width: 90%;
 }
 
-h1 {
-  text-align: center;
-  font-size: 13.8rem;
-  line-height: 0px;
-  color: #2C2C2C;
-}
-
-h2 {
-  font-size: 4.2rem;
-  line-height: 0px;
-  color: #2C2C2C;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,4 +299,43 @@ a:hover,
 a:focus {
   border-bottom: 4px solid #4CEEA7;
   margin-bottom: 2%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 1px solid black;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 13.8rem;
+  line-height: 0px;
+  color: #2C2C2C;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  line-height: 0px;
+  color: #2C2C2C;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header {
+  background-image: url(../assets/header-image.jpg);
+  background-size: cover;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
 }

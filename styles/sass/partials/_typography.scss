@@ -27,19 +27,6 @@ button {
 
 
 
-// SET STYLING FOR TITLE ELEMENTS
-
-h1 {
-    text-align: center;
-    @include fontStyles(13.8rem, 0px);
-}
-
-h2 {
-    @include fontStyles(4.2rem, 0px);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 // NAV BAR HEADER STYLES
 // REPLACE DEFAULT STYLINGS ON NAV BAR ELEMENTS
@@ -50,10 +37,6 @@ h2 {
     padding-top: 5px;
     list-style: none;
 }
-
-// .navBar li {
-//     background: red;
-// }
 
 a {
     margin: 1.5rem 2.5rem;
@@ -71,3 +54,28 @@ a:focus {
     margin-bottom: 2%;
 }
 
+
+// SET STYLING FOR TITLE ELEMENTS
+
+
+// FLEXBOX THE H1
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid black;
+    height: 50vh;
+}
+
+h1 {
+    @include fontStyles(13.8rem, 0px);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+h2 {
+    @include fontStyles(4.2rem, 0px);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
