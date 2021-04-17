@@ -20,13 +20,27 @@ button {
 }
 
 .wrapper {
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 
+// SET STYLING FOR TITLE ELEMENTS
 
+
+// FLEXBOX THE H1
+header {
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
 // NAV BAR HEADER STYLES
 // REPLACE DEFAULT STYLINGS ON NAV BAR ELEMENTS
@@ -34,7 +48,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 5px;
+    align-items: flex-start;
+    padding-top: 0px;
     list-style: none;
 }
 
@@ -54,23 +69,21 @@ a:focus {
     margin-bottom: 2%;
 }
 
-
-// SET STYLING FOR TITLE ELEMENTS
-
-
-// FLEXBOX THE H1
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border: 1px solid black;
-    height: 50vh;
-}
-
 h1 {
     @include fontStyles(13.8rem, 0px);
-    text-align: center;
     padding-bottom: 4rem;
+    align-self: center;
+    z-index: 10;
+}
+
+// WHAT IS CAPTURED SECTION
+
+.whatIsCaptured {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {

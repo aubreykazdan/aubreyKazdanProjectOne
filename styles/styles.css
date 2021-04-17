@@ -263,9 +263,28 @@ button {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
+}
+
+header {
+  height: 80vh;
+  border: 1px solid black;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .navBar ul {
@@ -279,7 +298,10 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 0px;
   list-style: none;
 }
 
@@ -301,7 +323,19 @@ a:focus {
   margin-bottom: 2%;
 }
 
-header {
+h1 {
+  font-size: 13.8rem;
+  line-height: 0px;
+  color: #2C2C2C;
+  padding-bottom: 4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 10;
+}
+
+.whatIsCaptured {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,19 +343,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  border: 1px solid black;
-  height: 50vh;
-}
-
-h1 {
-  font-size: 13.8rem;
-  line-height: 0px;
-  color: #2C2C2C;
-  text-align: center;
-  padding-bottom: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2 {
@@ -338,4 +365,17 @@ header {
   background-size: cover;
   background-color: #FAFAFA;
   background-repeat: no-repeat;
+  background-position: center center;
+  max-height: 750px;
+}
+
+.cameraImageRight {
+  position: absolute;
+  top: 40rem;
+  right: 0;
+}
+
+.cameraImageRight img {
+  max-height: 600px;
+  max-width: 600px;
 }

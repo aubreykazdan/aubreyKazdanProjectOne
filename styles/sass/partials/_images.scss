@@ -3,4 +3,17 @@ header {
     background-size: cover;
     background-color: $backgroundColorOne;
     background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 750px;
+}
+
+.cameraImageRight {
+    position: absolute;
+    top: 40rem;
+    right: 0;
+}
+
+.cameraImageRight img {
+    max-height: 600px;
+    max-width: 600px;
 }
