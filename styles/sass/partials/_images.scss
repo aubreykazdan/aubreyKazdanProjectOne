@@ -12,7 +12,7 @@ header {
     max-height: 750px;
     height: 80vh;
     // JUST TO SEE THE DIMENSIONS
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 .headerImageRight {
@@ -68,4 +68,36 @@ header {
         border-radius: 50%;
         font-size: 2.5rem;
         padding: 1rem;
+        margin-right: 5px;
     }
+
+    // MAPS BACKGROUND IMAGE
+
+    // SET HEIGHT OF AREA FOR IMAGE
+    .mapsBackgroundImage {
+        height: 40vh;
+        width: 100%;
+        background-image: url(../assets/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    // ABOUT PART THREE - THIS MONTH PROFILE
+
+    .tmpImage {
+        box-shadow:  40px 30px 0 0 $pictureBorderColor;
+    }
+
+    // GALLERY SECTION 
+
+    // FOOTER SECTION
+    footer {
+        height: 3vh;
+        text-align: center;
+        color: #FAFAFA;
+        background-color: #2C2C2C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+

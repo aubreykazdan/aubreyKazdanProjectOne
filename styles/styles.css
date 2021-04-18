@@ -360,7 +360,7 @@ p {
   display: flex;
 }
 
-.flexContainerAbout {
+.flexContainerAboutPartOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,6 +424,7 @@ p {
 
 .iconsSection {
   height: 50vh;
+  width: 100%;
   margin-bottom: -1rem;
   background-color: #EFFDF3;
 }
@@ -451,14 +452,54 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.iconsSection .paragraphTextAlign {
-  border: 1px solid black;
+.iconsSection h3 {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.iconsSection p {
+  padding-left: 7rem;
+}
+
+.aboutPartThree {
+  height: 50vh;
+  width: 100%;
+  background-color: #EFFDF3;
+}
+.aboutPartThree .flexContainerAboutPartThree {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutPartThree .flexContainerAboutPartThree .tmpTextContainer {
+  padding-left: 15rem;
+}
+.aboutPartThree .flexContainerAboutPartThree .tmpTextContainer .button {
+  margin-top: 2rem;
+}
+
+.aboutGallery {
+  height: 50vh;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+.aboutGallery .flexContainerGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 img {
@@ -473,7 +514,6 @@ header {
   background-position: 10% 45%;
   max-height: 750px;
   height: 80vh;
-  border: 1px solid black;
 }
 
 .headerImageRight {
@@ -527,4 +567,34 @@ header {
   border-radius: 50%;
   font-size: 2.5rem;
   padding: 1rem;
+  margin-right: 5px;
+}
+
+.mapsBackgroundImage {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tmpImage {
+  -webkit-box-shadow: 40px 30px 0 0 #FDFA69;
+          box-shadow: 40px 30px 0 0 #FDFA69;
+}
+
+footer {
+  height: 3vh;
+  text-align: center;
+  color: #FAFAFA;
+  background-color: #2C2C2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

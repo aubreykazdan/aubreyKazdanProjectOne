@@ -32,6 +32,10 @@ a {
     width: 80%;
 }
 
+// div {
+//     border: 1px solid black;
+// }
+
 
 // SET STYLING FOR TITLE ELEMENTS
 
@@ -100,7 +104,7 @@ p {
     display: flex;
 }
 
-.flexContainerAbout {
+.flexContainerAboutPartOne {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,6 +167,7 @@ p {
 .iconsSection {
     // SAME HEIGHT AS ABOUT PART ONE
     height: 50vh;
+    width: 100%;
     margin-bottom: -1rem;
     background-color: $backgroundColorTwo;
 
@@ -183,10 +188,51 @@ p {
                 flex-direction: column;
                 justify-content: center;
             }
-            
-            .paragraphTextAlign {
-                    border: 1px solid black;
-                    display: flex;
-                    justify-content: flex-end;
+
+            h3 {
+                padding-left: 1rem;
+                margin-bottom: 0;
             }
+
+            p {
+                padding-left: 7rem;
+            }
+}
+
+// ABOUT PART THREE - THIS MONTH PROFILE
+
+.aboutPartThree {
+    height: 50vh;
+    width: 100%;
+    background-color: $backgroundColorTwo;
+
+        .flexContainerAboutPartThree {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+                .tmpTextContainer {
+                    padding-left: 15rem;
+
+                        .button {
+                            margin-top: 2rem;
+                        }
+                }
+        }
+}
+
+// GALLERY SECTION
+
+.aboutGallery {
+    height: 50vh;
+    width: 100%;
+    background-color: $backgroundColorOne;
+
+        .flexContainerGallery {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
 }
