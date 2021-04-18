@@ -21,7 +21,6 @@ button {
 }
 
 .wrapper {
-
     // border: 2px dotted blue;
     max-width: 1280px;
     margin: 0 auto;
@@ -31,13 +30,6 @@ button {
 
 // SET STYLING FOR TITLE ELEMENTS
 
-
-// FLEXBOX THE H1
-header {
-    height: 80vh;
-    // JUST TO SEE THE DIMENSIONS
-    border: 1px solid black;
-}
 
 .headerContainer {
     display: flex;
@@ -90,20 +82,19 @@ p {
     font-family: $secondaryFont;
 }
 
-// WHAT IS CAPTURED SECTION
-
-// JUST TO SEE THE DIMENSIONS
-main {
-    border: 1px solid red;
-}
+// ABOUT PART ONE - WHAT IS CAPTURED SECTION
 
 .aboutPartOne {
     height: 50vh;
+    background: $backgroundColorTwo;
+    display: flex;
+}
+
+.flexContainerAbout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
 }
 
 
@@ -111,9 +102,9 @@ main {
     font-family: $primaryFont;
     @include fontStyles(2rem, 32px);
     border: 1px solid transparent;
+    background: $buttonsNavLogosColor;
     padding: 1rem;
     width: 20rem;
-    background: $buttonsNavLogosColor;
     text-decoration: none;
     text-align: center;
 }
@@ -124,6 +115,29 @@ main {
 }
 
 // SKILLS + GEAR SECTIONS
+
+// SET THE CONTAINER FOR GRID
+.aboutPartTwo {
+    height: 80vh;
+    position: relative;
+}
+
+// SET THE 4 X 4 GRID
+.gridContainerAbout {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.aboutImageOne,
+.aboutImageTwo {
+    position: absolute;
+    left: 0%;
+    top: -40px;
+    width: 40%;
+}
 
 
 

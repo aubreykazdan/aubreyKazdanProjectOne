@@ -14,7 +14,7 @@ article, aside, footer, header, nav, section {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 figcaption, figure, main {
@@ -33,7 +33,7 @@ hr {
 }
 
 pre {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -58,7 +58,7 @@ b, strong {
 }
 
 code, kbd, samp {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -83,11 +83,11 @@ sub, sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 audio, video {
@@ -136,7 +136,7 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
@@ -206,7 +206,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0;
 }
@@ -269,11 +269,6 @@ button {
   width: 80%;
 }
 
-header {
-  height: 80vh;
-  border: 1px solid black;
-}
-
 .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +325,6 @@ h1 {
   color: #2C2C2C;
   padding-bottom: 5rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   z-index: 10;
 }
@@ -347,12 +341,15 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  border: 1px solid red;
-}
-
 .aboutPartOne {
   height: 50vh;
+  background: #EFFDF3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexContainerAbout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +363,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15rem;
 }
 
 .button {
@@ -375,9 +371,9 @@ main {
   line-height: 32px;
   color: #2C2C2C;
   border: 1px solid transparent;
+  background: #4CEEA7;
   padding: 1rem;
   width: 20rem;
-  background: #4CEEA7;
   text-decoration: none;
   text-align: center;
 }
@@ -387,18 +383,41 @@ main {
   border: 1px solid red;
 }
 
+.aboutPartTwo {
+  height: 80vh;
+  position: relative;
+}
+
+.gridContainerAbout {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.aboutImageOne,
+.aboutImageTwo {
+  position: absolute;
+  left: 0%;
+  top: -40px;
+  width: 40%;
+}
+
 header {
   background-image: url(../assets/header-image.jpg);
   background-size: cover;
   background-color: #FAFAFA;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 10% 45%;
   max-height: 750px;
+  height: 80vh;
+  border: 1px solid black;
 }
 
 .headerImageRight {
   position: absolute;
-  bottom: 0;
+  bottom: 34%;
   right: 0;
   max-width: 600px;
   width: 45%;

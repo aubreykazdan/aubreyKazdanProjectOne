@@ -3,3 +3,8 @@
     line-height: $line-height;
     color: $font-color;
 }
+
+@mixin makeGrid($grid-columns, $grid-rows) {
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+}

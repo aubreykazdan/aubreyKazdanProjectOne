@@ -3,13 +3,16 @@ header {
     background-size: cover;
     background-color: $backgroundColorOne;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 10% 45%;
     max-height: 750px;
+    height: 80vh;
+    // JUST TO SEE THE DIMENSIONS
+    border: 1px solid black;
 }
 
 .headerImageRight {
     position: absolute;
-    bottom: 0;
+    bottom: 34%;
     right: 0;
     max-width: 600px;
     width: 45%
