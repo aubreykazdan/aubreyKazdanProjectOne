@@ -23,3 +23,33 @@ header {
     box-shadow:  0 0 0 4.5rem $pictureBorderColor;
     width: 100%;
 }
+
+// ABOUT PART TWO SECTION - GRID
+
+.aboutImageOneContainer {
+    width: 40%;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.aboutImageTwoContainer{
+    width: 40%;
+    position: relative;
+    grid-column: -2 / -1;
+    grid-row: -2 / -1;
+}
+
+    .aboutImageOne {
+        position: absolute;
+        left: -30%;
+        top: -10%;
+        box-shadow:  40px 30px 0 0 $pictureBorderColor;
+    }
+    
+    .aboutImageTwo {
+        position: absolute;
+        left: 28%;
+        bottom: 25%;
+        box-shadow:  -40px 35px 0 0 $pictureBorderColor;
+    }

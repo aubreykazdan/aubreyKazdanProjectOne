@@ -263,6 +263,10 @@ button {
   text-transform: uppercase;
 }
 
+a {
+  display: inline-block;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -385,23 +389,29 @@ p {
 
 .aboutPartTwo {
   height: 80vh;
-  position: relative;
 }
-
-.gridContainerAbout {
+.aboutPartTwo .gridContainerAbout {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-
-.aboutImageOne,
-.aboutImageTwo {
-  position: absolute;
-  left: 0%;
-  top: -40px;
-  width: 40%;
+.aboutPartTwo .textContainerOne {
+  width: 60%;
+  margin: 0 auto;
+}
+.aboutPartTwo a {
+  margin-top: 1rem;
+  width: 15rem;
+}
+.aboutPartTwo .textContainerTwo {
+  width: 60%;
+  margin: 0 auto;
+  text-align: right;
+}
+.aboutPartTwo p {
+  text-align: left;
 }
 
 header {
@@ -428,4 +438,34 @@ header {
   -webkit-box-shadow: 0 0 0 4.5rem #FDFA69;
           box-shadow: 0 0 0 4.5rem #FDFA69;
   width: 100%;
+}
+
+.aboutImageOneContainer {
+  width: 40%;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.aboutImageTwoContainer {
+  width: 40%;
+  position: relative;
+  grid-column: -2/-1;
+  grid-row: -2/-1;
+}
+
+.aboutImageOne {
+  position: absolute;
+  left: -30%;
+  top: -10%;
+  -webkit-box-shadow: 40px 30px 0 0 #FDFA69;
+          box-shadow: 40px 30px 0 0 #FDFA69;
+}
+
+.aboutImageTwo {
+  position: absolute;
+  left: 28%;
+  bottom: 25%;
+  -webkit-box-shadow: -40px 35px 0 0 #FDFA69;
+          box-shadow: -40px 35px 0 0 #FDFA69;
 }
