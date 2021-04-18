@@ -263,6 +263,10 @@ button {
   text-transform: uppercase;
 }
 
+img {
+  display: block;
+}
+
 a {
   display: inline-block;
 }
@@ -341,6 +345,13 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 3.2rem;
+  line-height: 0;
+  color: #2C2C2C;
+  letter-spacing: 1px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -367,6 +378,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 65%;
 }
 
 .button {
@@ -398,16 +410,15 @@ p {
   grid-template-rows: repeat(2, 1fr);
 }
 .aboutPartTwo .textContainerOne {
-  width: 60%;
-  margin: 0 auto;
+  width: 78%;
+  margin: 8rem 0 0 14rem;
 }
 .aboutPartTwo a {
   margin-top: 1rem;
   width: 15rem;
 }
 .aboutPartTwo .textContainerTwo {
-  width: 60%;
-  margin: 0 auto;
+  width: 80%;
   text-align: right;
 }
 .aboutPartTwo p {
@@ -456,7 +467,7 @@ header {
 
 .aboutImageOne {
   position: absolute;
-  left: -30%;
+  left: -65%;
   top: -10%;
   -webkit-box-shadow: 40px 30px 0 0 #FDFA69;
           box-shadow: 40px 30px 0 0 #FDFA69;
@@ -464,7 +475,7 @@ header {
 
 .aboutImageTwo {
   position: absolute;
-  left: 28%;
+  left: 54%;
   bottom: 25%;
   -webkit-box-shadow: -40px 35px 0 0 #FDFA69;
           box-shadow: -40px 35px 0 0 #FDFA69;

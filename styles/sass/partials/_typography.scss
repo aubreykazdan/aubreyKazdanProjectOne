@@ -20,6 +20,11 @@ button {
     text-transform: uppercase;
 }
 
+// THIS IS TO MAKE BOX SHADOWS ALIGN WITH BOTTOM OF IMAGES
+img {
+    display: block;
+}
+
 // FOR ANCHOR ELEMENTS TO ACCEPT MARGIN + PADDING
 a {
     display: inline-block;
@@ -83,6 +88,11 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    @include fontStyles(3.2rem, 0);
+    letter-spacing: 1px;
+}
+
 p {
     font-family: $secondaryFont;
 }
@@ -100,6 +110,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // TO MAKE <P> APPEAR BETTER
+    width: 65%;
 }
 
 
@@ -134,9 +146,8 @@ p {
         grid-template-rows: repeat(2, 1fr);
         }
             .textContainerOne {
-                width: 60%;
-                margin: 0 auto;
-                // padding: 5rem 5rem;
+                width: 78%;
+                margin: 8rem 0 0 14rem;
             }
                 a {
                     margin-top: 1rem;
@@ -144,8 +155,7 @@ p {
                 }
             
             .textContainerTwo {
-                width: 60%;
-                margin: 0 auto;
+                width: 80%;
                 text-align: right;
             }
                 p {
