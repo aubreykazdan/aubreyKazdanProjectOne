@@ -1,3 +1,8 @@
+// THIS IS TO MAKE BOX SHADOWS ALIGN WITH BOTTOM OF IMAGES
+img {
+    display: block;
+}
+
 header {
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
@@ -52,4 +57,15 @@ header {
         left: 54%;
         bottom: 25%;
         box-shadow:  -40px 35px 0 0 $pictureBorderColor;
+    }
+
+    // ABOUT ICONS SECTION - FLEX
+
+    // FORMATTING THE ICONS
+    .fas {
+        background-color: $buttonsNavLogosColor;
+        background-size: 1rem;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        padding: 1rem;
     }

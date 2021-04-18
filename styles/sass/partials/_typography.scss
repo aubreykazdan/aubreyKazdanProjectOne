@@ -20,11 +20,6 @@ button {
     text-transform: uppercase;
 }
 
-// THIS IS TO MAKE BOX SHADOWS ALIGN WITH BOTTOM OF IMAGES
-img {
-    display: block;
-}
-
 // FOR ANCHOR ELEMENTS TO ACCEPT MARGIN + PADDING
 a {
     display: inline-block;
@@ -133,10 +128,10 @@ p {
 
 // SKILLS + GEAR SECTIONS
 
-// SET THE CONTAINER FOR GRID
 .aboutPartTwo {
+    // SET THE CONTAINER FOR GRID
     height: 80vh;
-    
+    margin-bottom: -16rem;
     // SET THE 4 X 4 GRID
     .gridContainerAbout {
         height: 100%;
@@ -163,5 +158,35 @@ p {
                 }
 }
 
+// ABOUT ICONS SECTION - FLEX
 
+.iconsSection {
+    // SAME HEIGHT AS ABOUT PART ONE
+    height: 50vh;
+    margin-bottom: -1rem;
+    background-color: $backgroundColorTwo;
 
+        .flexContainerIcons {
+            // SET DIMENSIONS FOR FLEX CONTAINER
+            height: 100%;
+            width: 100%;
+            display: flex;
+            // justify-content: flex-end;
+        }
+        
+            .flexIconColumnOne,
+            .flexIconColumnTwo {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 5px;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .paragraphTextAlign {
+                    border: 1px solid black;
+                    display: flex;
+                    justify-content: flex-end;
+            }
+}

@@ -263,10 +263,6 @@ button {
   text-transform: uppercase;
 }
 
-img {
-  display: block;
-}
-
 a {
   display: inline-block;
 }
@@ -401,6 +397,7 @@ p {
 
 .aboutPartTwo {
   height: 80vh;
+  margin-bottom: -16rem;
 }
 .aboutPartTwo .gridContainerAbout {
   height: 100%;
@@ -423,6 +420,49 @@ p {
 }
 .aboutPartTwo p {
   text-align: left;
+}
+
+.iconsSection {
+  height: 50vh;
+  margin-bottom: -1rem;
+  background-color: #EFFDF3;
+}
+.iconsSection .flexContainerIcons {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.iconsSection .flexIconColumnOne,
+.iconsSection .flexIconColumnTwo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.iconsSection .paragraphTextAlign {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+img {
+  display: block;
 }
 
 header {
@@ -479,4 +519,12 @@ header {
   bottom: 25%;
   -webkit-box-shadow: -40px 35px 0 0 #FDFA69;
           box-shadow: -40px 35px 0 0 #FDFA69;
+}
+
+.fas {
+  background-color: #4CEEA7;
+  background-size: 1rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
