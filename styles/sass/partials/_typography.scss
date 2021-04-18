@@ -7,19 +7,22 @@ html {
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: $primaryFont;
     @include fontStyles(2rem, 32px);
 }
 
 // APPLYING UPPERCASE TO TITLES + BUTTONS
 h1,
 h2,
+h3,
 a,
 button {
     text-transform: uppercase;
 }
 
 .wrapper {
+
+    // border: 2px dotted blue;
     max-width: 1280px;
     margin: 0 auto;
     width: 80%;
@@ -32,6 +35,7 @@ button {
 // FLEXBOX THE H1
 header {
     height: 80vh;
+    // JUST TO SEE THE DIMENSIONS
     border: 1px solid black;
 }
 
@@ -53,42 +57,73 @@ header {
     list-style: none;
 }
 
-a {
+.navBar ul li a {
     margin: 1.5rem 2.5rem;
     padding-bottom: 10px;
     @include fontStyles(2rem, 29px);
     letter-spacing: 1px;
     list-style: none;
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
-a:hover,
-a:focus {
+.navBar ul li a:hover,
+.navBar ul li a:focus {
     border-bottom: 4px solid $buttonsNavLogosColor;
     margin-bottom: 2%;
 }
 
 h1 {
     @include fontStyles(13.8rem, 0px);
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     align-self: center;
     z-index: 10;
 }
 
+h2 {
+    @include fontStyles(4.2rem, 0px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $secondaryFont;
+}
+
 // WHAT IS CAPTURED SECTION
 
-.whatIsCaptured {
+// JUST TO SEE THE DIMENSIONS
+main {
+    border: 1px solid red;
+}
+
+.aboutPartOne {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
 }
 
-h2 {
-    @include fontStyles(4.2rem, 0px);
+
+.button {
+    font-family: $primaryFont;
+    @include fontStyles(2rem, 32px);
+    border: 1px solid transparent;
+    padding: 1rem;
+    width: 20rem;
+    background: $buttonsNavLogosColor;
+    text-decoration: none;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
+
+.button:hover {
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+// SKILLS + GEAR SECTIONS
+
+
+

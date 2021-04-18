@@ -249,7 +249,7 @@ html {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   line-height: 32px;
   color: #2C2C2C;
@@ -257,6 +257,7 @@ body {
 
 h1,
 h2,
+h3,
 a,
 button {
   text-transform: uppercase;
@@ -305,7 +306,7 @@ header {
   list-style: none;
 }
 
-a {
+.navBar ul li a {
   margin: 1.5rem 2.5rem;
   padding-bottom: 10px;
   font-size: 2rem;
@@ -313,12 +314,12 @@ a {
   color: #2C2C2C;
   letter-spacing: 1px;
   list-style: none;
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
+.navBar ul li a:hover,
+.navBar ul li a:focus {
   border-bottom: 4px solid #4CEEA7;
   margin-bottom: 2%;
 }
@@ -327,14 +328,30 @@ h1 {
   font-size: 13.8rem;
   line-height: 0px;
   color: #2C2C2C;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 10;
 }
 
-.whatIsCaptured {
+h2 {
+  font-size: 4.2rem;
+  line-height: 0px;
+  color: #2C2C2C;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  border: 1px solid red;
+}
+
+.aboutPartOne {
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,15 +366,25 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15rem;
 }
 
-h2 {
-  font-size: 4.2rem;
-  line-height: 0px;
+.button {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  line-height: 32px;
   color: #2C2C2C;
+  border: 1px solid transparent;
+  padding: 1rem;
+  width: 20rem;
+  background: #4CEEA7;
+  text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 1px solid red;
 }
 
 header {
@@ -369,13 +396,17 @@ header {
   max-height: 750px;
 }
 
-.cameraImageRight {
+.headerImageRight {
   position: absolute;
-  top: 40rem;
+  bottom: 0;
   right: 0;
+  max-width: 600px;
+  width: 45%;
 }
 
-.cameraImageRight img {
+.headerImageRight img {
   max-height: 600px;
-  max-width: 600px;
+  -webkit-box-shadow: 0 0 0 4.5rem #FDFA69;
+          box-shadow: 0 0 0 4.5rem #FDFA69;
+  width: 100%;
 }
