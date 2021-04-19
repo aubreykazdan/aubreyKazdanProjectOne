@@ -23,11 +23,12 @@ button {
 // FOR ANCHOR ELEMENTS TO ACCEPT MARGIN + PADDING
 a {
     display: inline-block;
+    line-height: 29px
 }
 
 .wrapper {
     // border: 2px dotted blue;
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 80%;
 }
@@ -36,9 +37,9 @@ a {
 //     border: 1px solid black;
 // }
 
+// THIS IS PAGE 1 --------------->
 
-// SET STYLING FOR TITLE ELEMENTS
-
+// HOME SECTION
 
 .headerContainer {
     display: flex;
@@ -70,7 +71,7 @@ a {
 
 .navBar ul li a:hover,
 .navBar ul li a:focus {
-    border-bottom: 4px solid $buttonsNavLogosColor;
+    border-bottom: 4px solid $green;
     margin-bottom: 2%;
 }
 
@@ -100,7 +101,7 @@ p {
 
 .aboutPartOne {
     height: 50vh;
-    background: $backgroundColorTwo;
+    background: $ice;
     display: flex;
 }
 
@@ -118,7 +119,7 @@ p {
     font-family: $primaryFont;
     @include fontStyles(2rem, 32px);
     border: 1px solid transparent;
-    background: $buttonsNavLogosColor;
+    background: $green;
     padding: 1rem;
     width: 20rem;
     text-decoration: none;
@@ -169,7 +170,7 @@ p {
     height: 50vh;
     width: 100%;
     margin-bottom: -1rem;
-    background-color: $backgroundColorTwo;
+    background-color: $ice;
 
         .flexContainerIcons {
             // SET DIMENSIONS FOR FLEX CONTAINER
@@ -204,7 +205,7 @@ p {
 .aboutPartThree {
     height: 50vh;
     width: 100%;
-    background-color: $backgroundColorTwo;
+    background-color: $ice;
 
         .flexContainerAboutPartThree {
             height: 100%;
@@ -215,7 +216,6 @@ p {
 
                 .tmpTextContainer {
                     padding-left: 15rem;
-
                         .button {
                             margin-top: 2rem;
                         }
@@ -228,7 +228,7 @@ p {
 .aboutGallery {
     height: 50vh;
     width: 100%;
-    background-color: $backgroundColorOne;
+    background-color: $white;
 
         .flexContainerGallery {
             display: flex;
@@ -236,3 +236,99 @@ p {
             justify-content: space-between;
         }
 }
+
+// FOOTER SECTION
+footer {
+    height: 3vh;
+    text-align: center;
+    color: $white;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// THIS IS PAGE 2 --------------->
+
+// BLOG HEADER SECTION
+
+.blogTitle {
+    font-size: 10rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+// BLOG MAIN SECTION
+
+.blog {
+    background-color: $ice;
+}
+
+.blogMainSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+        .blogMainLeftContainer {
+            height: 60%;
+            flex-basis: 40%;
+
+            .blogTextLeftTop {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .blogTextLeft {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                    }
+                    li {
+                        list-style: none;
+                    }
+                    a {
+                        color: $black;
+                        text-transform: none;
+                        text-decoration: none;
+                    }
+                    .recentPostsList {
+                        font-family: $secondaryFont;
+                        font-size: 1.8rem;
+                    }
+                }
+                
+            }
+        }
+
+        .blogMainRightContainer {
+            height: 60%;
+            flex-basis: 60%;
+
+            .blogTextRightTop {
+                margin-right: 0rem;
+                box-shadow: 0rem 0rem 1rem 0rem $yellow;
+
+                    .blogTextRight {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 15rem 0 10rem;
+                        
+                        
+                        p {
+                            margin: 0;
+
+                                &.date {
+                                    padding-bottom: 5rem;
+                                }
+                        }
+                    }
+            }
+        }
+}
+

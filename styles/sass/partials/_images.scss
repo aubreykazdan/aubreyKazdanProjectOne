@@ -3,14 +3,16 @@ img {
     display: block;
 }
 
-header {
+// THIS IS PAGE 1 --------------->
+
+.pageOneHeader{
+    height: 80vh;
     background-image: url(../assets/header-image.jpg);
     background-size: cover;
-    background-color: $backgroundColorOne;
+    background-color: $white;
     background-repeat: no-repeat;
     background-position: 10% 45%;
     max-height: 750px;
-    height: 80vh;
     // JUST TO SEE THE DIMENSIONS
     // border: 1px solid black;
 }
@@ -25,7 +27,7 @@ header {
 
 .headerImageRight img {
     max-height: 600px;
-    box-shadow:  0 0 0 4.5rem $pictureBorderColor;
+    box-shadow:  0 0 0 4.5rem $yellow;
     width: 100%;
 }
 
@@ -49,21 +51,21 @@ header {
         position: absolute;
         left: -65%;
         top: -10%;
-        box-shadow:  40px 30px 0 0 $pictureBorderColor;
+        box-shadow:  40px 30px 0 0 $yellow;
     }
     
     .aboutImageTwo {
         position: absolute;
         left: 54%;
         bottom: 25%;
-        box-shadow:  -40px 35px 0 0 $pictureBorderColor;
+        box-shadow:  -40px 35px 0 0 $yellow;
     }
 
     // ABOUT ICONS SECTION - FLEX
 
     // FORMATTING THE ICONS
     .fas {
-        background-color: $buttonsNavLogosColor;
+        background-color: $green;
         background-size: 1rem;
         border-radius: 50%;
         font-size: 2.5rem;
@@ -85,19 +87,44 @@ header {
     // ABOUT PART THREE - THIS MONTH PROFILE
 
     .tmpImage {
-        box-shadow:  40px 30px 0 0 $pictureBorderColor;
+        box-shadow:  40px 30px 0 0 $yellow;
     }
 
-    // GALLERY SECTION 
+// THIS IS PAGE 2 --------------->
 
-    // FOOTER SECTION
-    footer {
-        height: 3vh;
-        text-align: center;
-        color: #FAFAFA;
-        background-color: #2C2C2C;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+// BLOG HEADER SECTION
 
+.blogHeaderBackground {
+    height: 50vh;
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// BLOG PICTURE SECTION
+
+.blogPictureSection {
+    height: 30vh;
+    border: 1px solid black;
+    position: relative;
+    background-color: $ice;
+
+        .blogFlexContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+              .blogLeftImageContainer {
+                  position: absolute;
+                  left: 0;
+                  top: 10rem;
+              }
+
+              .blogRightImageContainer {
+                  position: absolute;
+                  right: 0;
+                  bottom: 5rem;
+                  box-shadow:  -4rem 4rem 0 0rem $yellow;
+              }
+        }
+}

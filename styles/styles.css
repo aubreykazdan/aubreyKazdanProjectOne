@@ -265,10 +265,11 @@ button {
 
 a {
   display: inline-block;
+  line-height: 29px;
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 80%;
 }
@@ -502,18 +503,121 @@ p {
           justify-content: space-between;
 }
 
+footer {
+  height: 3vh;
+  text-align: center;
+  color: #FAFAFA;
+  background-color: #2C2C2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogTitle {
+  font-size: 10rem;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.blog {
+  background-color: #EFFDF3;
+}
+
+.blogMainSection {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMainSection .blogMainLeftContainer {
+  height: 60%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop .blogTextLeft h2 {
+  font-size: 2rem;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop .blogTextLeft p {
+  font-size: 1.8rem;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop .blogTextLeft li {
+  list-style: none;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop .blogTextLeft a {
+  color: #2C2C2C;
+  text-transform: none;
+  text-decoration: none;
+}
+.blogMainSection .blogMainLeftContainer .blogTextLeftTop .blogTextLeft .recentPostsList {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+}
+.blogMainSection .blogMainRightContainer {
+  height: 60%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.blogMainSection .blogMainRightContainer .blogTextRightTop {
+  margin-right: 0rem;
+  -webkit-box-shadow: 0rem 0rem 1rem 0rem #FDFA69;
+          box-shadow: 0rem 0rem 1rem 0rem #FDFA69;
+}
+.blogMainSection .blogMainRightContainer .blogTextRightTop .blogTextRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 15rem 0 10rem;
+}
+.blogMainSection .blogMainRightContainer .blogTextRightTop .blogTextRight p {
+  margin: 0;
+}
+.blogMainSection .blogMainRightContainer .blogTextRightTop .blogTextRight p.date {
+  padding-bottom: 5rem;
+}
+
 img {
   display: block;
 }
 
-header {
+.pageOneHeader {
+  height: 80vh;
   background-image: url(../assets/header-image.jpg);
   background-size: cover;
   background-color: #FAFAFA;
   background-repeat: no-repeat;
   background-position: 10% 45%;
   max-height: 750px;
-  height: 80vh;
 }
 
 .headerImageRight {
@@ -583,18 +687,38 @@ header {
           box-shadow: 40px 30px 0 0 #FDFA69;
 }
 
-footer {
-  height: 3vh;
-  text-align: center;
-  color: #FAFAFA;
-  background-color: #2C2C2C;
+.blogHeaderBackground {
+  height: 50vh;
+  background-image: url(../assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blogPictureSection {
+  height: 30vh;
+  border: 1px solid black;
+  position: relative;
+  background-color: #EFFDF3;
+}
+.blogPictureSection .blogFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogPictureSection .blogFlexContainer .blogLeftImageContainer {
+  position: absolute;
+  left: 0;
+  top: 10rem;
+}
+.blogPictureSection .blogFlexContainer .blogRightImageContainer {
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+  -webkit-box-shadow: -4rem 4rem 0 0rem #FDFA69;
+          box-shadow: -4rem 4rem 0 0rem #FDFA69;
 }
