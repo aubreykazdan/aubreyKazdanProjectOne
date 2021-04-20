@@ -102,11 +102,11 @@ img {
     background-repeat: no-repeat;
 }
 
-// BLOG PICTURE SECTION
+// BLOG MAIN SECTION
 
 .blogPictureSection {
     height: 30vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-color: $ice;
 
@@ -116,25 +116,27 @@ img {
             flex-wrap: nowrap;
             justify-content: space-between;
 
-            //   .blogLeftImageContainer {
-            //       position: absolute;
-            //       left: 0;
-            //       top: 10rem;
-            //   }
+              .blogLeftImageContainer {
+                  position: absolute;
+                  left: 0;
+                  top: 10rem;
+              }
 
-            //   .blogRightImageContainer {
-            //       position: absolute;
-            //       right: 0;
-            //       bottom: 4rem;
-            //       box-shadow:  -4rem 4rem 0 0rem $yellow;
+              .blogRightImageContainer {
+                  position: absolute;
+                  right: 0;
+                  bottom: 4rem;
+                  box-shadow:  -4rem 4rem 0 0 $yellow;
 
-            //         .levitatingLens {
-            //             width: 100%;
-            //         }
-            //   }
+                    .levitatingLens {
+                        width: 100%;
+                    }
+              }
         }
 }
 
 .blogTextRightTop {
     box-shadow: 0rem 0rem 1rem 0rem $yellow;
 }
+
+// BLOG COMMENT + CONTACT SECTION
