@@ -274,7 +274,8 @@ footer {
 
         .blogMainLeftContainer {
             height: 60%;
-            flex-basis: 40%;
+            border: 1px solid black;
+            flex-basis: 30%;
 
             .blogTextLeftTop {
                 height: 100%;
@@ -313,20 +314,20 @@ footer {
         }
 
         .blogMainRightContainer {
-            height: 60%;
             flex-basis: 60%;
-            width: calc(100% / 5 * 3 - 40px);
+            // border: 1px solid black;
 
             .blogTextRightTop {
+                border: 1px solid black;
                 margin-bottom: 1rem;
                 padding-bottom: 2rem;
-                // width: 130%;
                 
 
                     .blogTextRight {
                         display: flex;
                         flex-direction: column;
                         margin: 0 15rem 0 10rem;
+                        
                         
                         p {
                             margin: 0;
