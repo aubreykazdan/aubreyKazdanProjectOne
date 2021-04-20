@@ -96,6 +96,7 @@ img {
 
 .blogHeaderBackground {
     height: 50vh;
+    width: 100%;
     background-image: url(../assets/blog-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,12 +106,12 @@ img {
 
 .blogPictureSection {
     height: 30vh;
-    border: 1px solid black;
     position: relative;
     background-color: $ice;
 
         .blogFlexContainer {
             display: flex;
+            width: 100%;
             flex-wrap: nowrap;
             justify-content: space-between;
 
@@ -121,10 +122,16 @@ img {
               }
 
               .blogRightImageContainer {
+                //   width: calc(100% / 5 * 3 - 40px);
                   position: absolute;
-                  right: 0;
-                  bottom: 5rem;
+                  border: 1px solid black;
+                  right: -0.8rem;
+                  bottom: 4rem;
                   box-shadow:  -4rem 4rem 0 0rem $yellow;
               }
         }
+}
+
+.blogTextRightTop {
+    box-shadow: 0rem 0rem 1rem 0rem $yellow;
 }

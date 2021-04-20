@@ -292,10 +292,16 @@ footer {
                     li {
                         list-style: none;
                     }
-                    a {
+                    a{
                         color: $black;
                         text-transform: none;
                         text-decoration: none;
+                        font-family: $secondaryFont;
+                        font-size: 1.8rem;
+                        
+                        &.more {
+                            font-weight: bold;
+                        }
                     }
                     .recentPostsList {
                         font-family: $secondaryFont;
@@ -309,16 +315,18 @@ footer {
         .blogMainRightContainer {
             height: 60%;
             flex-basis: 60%;
+            width: calc(100% / 5 * 3 - 40px);
 
             .blogTextRightTop {
-                margin-right: 0rem;
-                box-shadow: 0rem 0rem 1rem 0rem $yellow;
+                margin-bottom: 1rem;
+                padding-bottom: 2rem;
+                // width: 130%;
+                
 
                     .blogTextRight {
                         display: flex;
                         flex-direction: column;
                         margin: 0 15rem 0 10rem;
-                        
                         
                         p {
                             margin: 0;
