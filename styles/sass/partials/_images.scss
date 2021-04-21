@@ -3,19 +3,7 @@ img {
     display: block;
 }
 
-// THIS IS PAGE 1 --------------->
-
-.pageOneHeader{
-    height: 80vh;
-    background-image: url(../assets/header-image.jpg);
-    background-size: cover;
-    background-color: $white;
-    background-repeat: no-repeat;
-    background-position: 10% 45%;
-    max-height: 750px;
-    // JUST TO SEE THE DIMENSIONS
-    // border: 1px solid black;
-}
+// PAGE 1: HEADER STYLES
 
 .headerImageRight {
     position: absolute;
@@ -31,64 +19,44 @@ img {
     width: 100%;
 }
 
-// ABOUT PART TWO SECTION - GRID
+// PAGE 1: ABOUT PART TWO - GRID
 
-.aboutImageOneContainer {
+.aboutImageOneContainer,
+.aboutImageTwoContainer {
     width: 40%;
     position: relative;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
-.aboutImageTwoContainer{
-    width: 40%;
-    position: relative;
-    grid-column: -2 / -1;
-    grid-row: -2 / -1;
+.aboutImageOne {
+    position: absolute;
+    left: -65%;
+    top: -10%;
+    box-shadow:  40px 30px 0 0 $yellow;
 }
 
-    .aboutImageOne {
-        position: absolute;
-        left: -65%;
-        top: -10%;
-        box-shadow:  40px 30px 0 0 $yellow;
-    }
-    
-    .aboutImageTwo {
-        position: absolute;
-        left: 54%;
-        bottom: 25%;
-        box-shadow:  -40px 35px 0 0 $yellow;
-    }
+.aboutImageTwo {
+    position: absolute;
+    left: 54%;
+    bottom: 25%;
+    box-shadow:  -40px 35px 0 0 $yellow;
+}
 
-    // ABOUT ICONS SECTION - FLEX
+// MAPS BACKGROUND IMAGE
 
-    // FORMATTING THE ICONS
-    .fas {
-        background-color: $green;
-        background-size: 1rem;
-        border-radius: 50%;
-        font-size: 2.5rem;
-        padding: 1rem;
-        margin-right: 5px;
-    }
+// SET HEIGHT OF AREA FOR IMAGE
+.mapsBackgroundImage {
+    height: 40vh;
+    width: 100%;
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    // MAPS BACKGROUND IMAGE
+// PAGE 1: ABOUT PART THREE - THIS MONTH'S PROFILE
 
-    // SET HEIGHT OF AREA FOR IMAGE
-    .mapsBackgroundImage {
-        height: 40vh;
-        width: 100%;
-        background-image: url(../assets/banner.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    // ABOUT PART THREE - THIS MONTH PROFILE
-
-    .tmpImage {
-        box-shadow:  40px 30px 0 0 $yellow;
-    }
+.tmpImage {
+    box-shadow:  40px 30px 0 0 $yellow;
+}
 
 // THIS IS PAGE 2 --------------->
 

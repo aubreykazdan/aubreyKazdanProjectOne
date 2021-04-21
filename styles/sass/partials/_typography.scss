@@ -23,63 +23,20 @@ button {
 // FOR ANCHOR ELEMENTS TO ACCEPT MARGIN + PADDING
 a {
     display: inline-block;
-    line-height: 29px
+    line-height: 29px;
 }
 
-.wrapper {
-    // border: 2px dotted blue;
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 80%;
-}
+// THIS IS PAGE 1 ------------------------------------------------------------->
 
-// div {
-//     border: 1px solid black;
-// }
-
-// THIS IS PAGE 1 --------------->
-
-// HOME SECTION
-
-.headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-// NAV BAR HEADER STYLES
-// REPLACE DEFAULT STYLINGS ON NAV BAR ELEMENTS
-.navBar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-top: 0px;
-    list-style: none;
-}
-
-.navBar ul li a {
-    margin: 1.5rem 2.5rem;
-    padding-bottom: 10px;
+.navBar a {
     @include fontStyles(2rem, 29px);
     letter-spacing: 1px;
-    list-style: none;
-    display: block;
     text-decoration: none;
 }
 
-.navBar ul li a:hover,
-.navBar ul li a:focus {
-    border-bottom: 4px solid $green;
-    margin-bottom: 2%;
-}
 
 h1 {
     @include fontStyles(13.8rem, 0px);
-    padding-bottom: 5rem;
-    align-self: center;
-    z-index: 10;
 }
 
 h2 {
@@ -97,326 +54,78 @@ p {
     font-family: $secondaryFont;
 }
 
-// ABOUT PART ONE - WHAT IS CAPTURED SECTION
-
-.aboutPartOne {
-    height: 50vh;
-    background: $ice;
-    display: flex;
-}
-
-.flexContainerAboutPartOne {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // TO MAKE <P> APPEAR BETTER
-    width: 65%;
-}
-
 // FOR ALL ANCHOR AND BUTTON ELEMENTS
 .button,
 button {
     font-family: $primaryFont;
     @include fontStyles(2rem, 32px);
-    border: 1px solid transparent;
-    background: $green;
-    padding: 1rem;
-    width: 20rem;
     text-decoration: none;
-    text-align: center;
 }
 
-.button:hover,
-button:hover {
-    cursor: pointer;
-    border: 1px solid black;
+// FORMATTING THE ICONS
+.fas {
+    background-color: $green;
+    background-size: 1rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-right: 5px;
 }
 
-// SKILLS + GEAR SECTIONS
-
-.aboutPartTwo {
-    // SET THE CONTAINER FOR GRID
-    height: 80vh;
-    margin-bottom: -16rem;
-    // SET THE 4 X 4 GRID
-    .gridContainerAbout {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        }
-            .textContainerOne {
-                width: 78%;
-                margin: 8rem 0 0 14rem;
-            }
-                a {
-                    margin-top: 1rem;
-                    width: 15rem;
-                }
-            
-            .textContainerTwo {
-                width: 80%;
-                text-align: right;
-            }
-                p {
-                    text-align: left;
-                }
-}
-
-// ABOUT ICONS SECTION - FLEX
-
-.iconsSection {
-    // SAME HEIGHT AS ABOUT PART ONE
-    height: 50vh;
-    width: 100%;
-    margin-bottom: -1rem;
-    background-color: $ice;
-        .flexContainerIcons {
-            // SET DIMENSIONS FOR FLEX CONTAINER
-            height: 100%;
-            width: 100%;
-            display: flex;
-        }       
-            .flexIconColumnOne,
-            .flexIconColumnTwo {
-                width: 50%;
-                display: flex;
-                padding: 0 5px;
-                flex-direction: column;
-                justify-content: center;
-            }
-            h3 {
-                padding-left: 1rem;
-                margin-bottom: 0;
-            }
-            p {
-                padding-left: 7rem;
-            }
-}
-
-// ABOUT PART THREE - THIS MONTH PROFILE
-
-.aboutPartThree {
-    height: 50vh;
-    width: 100%;
-    background-color: $ice;
-        .flexContainerAboutPartThree {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-                .tmpTextContainer {
-                    padding-left: 15rem;
-                        .button {
-                            margin-top: 2rem;
-                        }
-                }
-        }
-}
-
-// GALLERY SECTION
-
-.aboutGallery {
-    height: 50vh;
-    width: 100%;
-    background-color: $white;
-        .flexContainerGallery {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-}
-
-// FOOTER SECTION
-footer {
-    height: 3vh;
-    text-align: center;
-    color: $white;
-    background-color: $black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-// THIS IS PAGE 2 --------------->
-// BLOG HEADER SECTION
+// THIS IS PAGE 2 ------------------------------------------------------------->
 
 .blogTitle {
     font-size: 10rem;
-    text-align: center;
-    padding-top: 15rem;
 }
 
-// BLOG MAIN SECTION
 
-.blogMain {
-    background-color: $ice;
-    height: 100%;
-    width: 100%;
-    .blogMainFlexContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-            .blogMainLeftContainer {
-                flex-basis: 40%;
-                .blogTextLeftTop {
-                    height: 95%;
-                    margin: 0 2rem;
-                    .blogTextLeft {
-                        display: flex;
-                        flex-direction: column;
-                        margin: 14rem 15rem -12rem 10rem;
-                        h2 {
-                            padding-top: 1rem;
-                            font-size: 2.6rem;
-                            letter-spacing: 1.1px;
-                        }
-                        p {
-                            font-size: 1.8rem;
-                        }
-                        li {
-                            list-style: none;
-                        }
-                        li::before {
-                            content: "\2022";
-                            color: silver;
-                            padding-right: 2rem;
-                        }
-                        a{
-                            color: $black;
-                            text-transform: none;
-                            text-decoration: none;
-                            font-family: $secondaryFont;
-                            font-size: 1.8rem;
-                            &.more {
-                                font-weight: bold;
-                            }
-                        }
-                        .recentPostsList {
-                            font-family: $secondaryFont;
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
-            }
-
-            .blogMainRightContainer {
-                flex-basis: 60%;
-                .blogTextRightTop {
-                    margin-bottom: 1rem;
-                    padding-bottom: 2rem;                    
-                        .blogTextRight {
-                            display: flex;
-                            flex-direction: column;
-                            margin: 2rem 15rem 0 10rem;
-                            p {
-                                margin: 0;
-                                    &.date {
-                                        padding-bottom: 5rem;
-                                    }
-                            }
-                        }
-                }
-            }
+.blogTextLeft h2 {
+    font-size: 2.6rem;
+    letter-spacing: 1.1px;
     }
-}
-
-// BLOG COMMENT + CONTACT SECTION
-
-
-.commentTextContainer {
-    flex-basis: 40%;
-    margin: 2rem 10rem;
-        .commentSectionTitle {
-            padding: 1rem 2rem;
+        p {
+            font-size: 1.8rem;
         }
-        .commentSectionTop,
-        .commentSectionBottom{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;    
-            position: relative;
-                .commentImageOne {
-                    position: absolute;
-                    bottom: 13rem;
-                    left: 2rem;
-                }
-                .commentImageTwo {
-                    position: absolute;
-                    bottom: 9rem;
-                    left: 2rem;
-                }
-                p {
-                    padding-left: 15rem;
-                }
+
+.recentPostsList {
+    font-family: $secondaryFont;
+    font-size: 1.8rem;
+        li {
+            list-style: none;
         }
-}
-
-.formSection {
-    // border: 1px solid black;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-        .postComment {
-            border: 1px solid black;
+        li::before {
+            content: "\2022";
+            color: silver;
+            padding-right: 2rem;
+            a {
+                color: $black;
+                text-transform: none;
+                text-decoration: none;
+                font-family: $secondaryFont;
+                font-size: 1.8rem;
+            } &.more {
+                font-weight: bold;                
+            }
         }
-}
+    }
 
-// CONTACT PAGE STARTS HERE ---------->
+// THIS IS PAGE 3 ------------------------------------------------------------->
 
-.getInTouch {
+.contactTitle {
     font-size: 10rem;
     text-align: center;
-    padding-top: 15rem;
-    padding-left: 15rem;
 }
 
-main {
-    height: 50vh;
-    background-color: $ice;
-        .contactMainContainer {
-            // TO HAVE CONTAINERS SIT SIDE BY SIDE
-            display: flex;
-                .contactInformationContainer {
-                    // TO HAVE TEXT ALIGNED CORRECTLY IN LEFT CONTAINER
-                    display: flex;
-                    flex-direction: column;
-                    width: calc(30% - 3rem);
-                    height: 50%;
-                        .contactIconContainer {
-                            letter-spacing: 1rem;
-                            font-size: 3.5rem;
-                            margin-top: 12rem;
-                        }
-                        .contactTextContainer {
-                            line-height: 1.5rem;
-                                h2 {
-                                    @include fontStyles(2.6rem, 0px);
-                                    letter-spacing: 1.1px;
-                                    padding: 2rem 0;
-                                }
-                        }
-                }
-                .formContactSection {
-                    background-color: $ice;
-                    width: calc(60% - 3rem);
-                    height: 50%;
-                    position: absolute;
-                    right: 15rem;
-                    top: 40rem;
-                    // TO CENTER THE FORM
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                       .contactForm {
-                           margin: 0 8rem;
-                       } 
-                }
-        }
-}
+.contactIconContainer {
+        letter-spacing: 1rem;
+        font-size: 3.5rem;
+        margin-top: 12rem;
+    }
+    .contactTextContainer {
+        line-height: 1.5rem;
+            h2 {
+                @include fontStyles(2.6rem, 0px);
+                letter-spacing: 1.1px;
+                padding: 2rem 0;
+            }
+    }

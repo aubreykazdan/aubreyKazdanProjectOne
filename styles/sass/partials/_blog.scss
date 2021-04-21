@@ -1,0 +1,97 @@
+// THIS IS PAGE 2 ----------->
+
+// PAGE 2: HEADER STYLES
+
+.blogTitle {
+    text-align: center;
+    padding-top: 15rem;
+}
+
+// PAGE 2: MAIN STYLES
+
+.blogMain {
+    background-color: $ice;
+    height: 100%;
+    width: 100%;
+    .blogMainFlexContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+            .blogMainLeftContainer {
+                flex-basis: 40%;
+                .blogTextLeftContainer {
+                    height: 95%;
+                    margin: 0 2rem;
+                    .blogTextLeft {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 14rem 15rem -12rem 10rem;
+                        h2 {
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+.blogMainRightContainer {
+    flex-basis: 60%;
+    .blogTextRightTop {
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;                    
+            .blogTextRight {
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 15rem 0 10rem;
+                p {
+                    margin: 0;
+                        &.date {
+                            padding-bottom: 5rem;
+                        }
+                }
+            }
+    }
+}
+
+// PAGE 2: BLOG COMMENT + CONTACT SECTION
+
+.commentTextContainer {
+    flex-basis: 40%;
+    margin: 2rem 10rem;
+        .commentSectionTitle {
+            padding: 1rem 2rem;
+        }
+        .commentSectionTop,
+        .commentSectionBottom{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;    
+            position: relative;
+                .commentImageOne {
+                    position: absolute;
+                    bottom: 13rem;
+                    left: 2rem;
+                }
+                .commentImageTwo {
+                    position: absolute;
+                    bottom: 9rem;
+                    left: 2rem;
+                }
+                p {
+                    padding-left: 15rem;
+                }
+        }
+}
+
+.formSection {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        .postComment {
+            border: 1px solid black;
+        }
+}
