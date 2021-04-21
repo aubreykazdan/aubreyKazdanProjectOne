@@ -379,7 +379,8 @@ p {
   width: 65%;
 }
 
-.button {
+.button,
+button {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   line-height: 32px;
@@ -392,7 +393,8 @@ p {
   text-align: center;
 }
 
-.button:hover {
+.button:hover,
+button:hover {
   cursor: pointer;
   border: 1px solid black;
 }
@@ -547,7 +549,7 @@ footer {
       flex-basis: 40%;
 }
 .blogMain .blogMainFlexContainer .blogMainLeftContainer .blogTextLeftTop {
-  height: 100%;
+  height: 95%;
   margin: 0 2rem;
 }
 .blogMain .blogMainFlexContainer .blogMainLeftContainer .blogTextLeftTop .blogTextLeft {
@@ -655,8 +657,87 @@ footer {
 }
 
 .formSection {
-  border: 1px solid black;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formSection .postComment {
+  border: 1px solid black;
+}
+
+.getInTouch {
+  font-size: 10rem;
+  text-align: center;
+  padding-top: 15rem;
+  padding-left: 15rem;
+}
+
+main {
+  height: 50vh;
+  background-color: #EFFDF3;
+}
+main .contactMainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .contactMainContainer .contactInformationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(30% - 3rem);
+  height: 50%;
+}
+main .contactMainContainer .contactInformationContainer .contactIconContainer {
+  letter-spacing: 1rem;
+  font-size: 3.5rem;
+  margin-top: 12rem;
+}
+main .contactMainContainer .contactInformationContainer .contactTextContainer {
+  line-height: 1.5rem;
+}
+main .contactMainContainer .contactInformationContainer .contactTextContainer h2 {
+  font-size: 2.6rem;
+  line-height: 0px;
+  color: #2C2C2C;
+  letter-spacing: 1.1px;
+  padding: 2rem 0;
+}
+main .contactMainContainer .formContactSection {
+  background-color: #EFFDF3;
+  width: calc(60% - 3rem);
+  height: 50%;
+  position: absolute;
+  right: 15rem;
+  top: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .contactMainContainer .formContactSection .contactForm {
+  margin: 0 8rem;
 }
 
 img {
@@ -784,4 +865,84 @@ img {
 .blogTextRightTop {
   -webkit-box-shadow: 0rem 0rem 1rem 0rem #FDFA69;
           box-shadow: 0rem 0rem 1rem 0rem #FDFA69;
+}
+
+.contactHeaderBackground {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #4CEEA7;
+  padding: 1.5rem 6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #EFFDF3;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #4CEEA7;
+  background-color: #EFFDF3;
+  display: block;
+  width: 100%;
+}
+
+.submitOne {
+  margin-top: 4rem;
+  margin: 4rem 3rem 0 3rem;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+.formContactSection {
+  -webkit-box-shadow: -4rem 4rem 0 0 #FDFA69;
+          box-shadow: -4rem 4rem 0 0 #FDFA69;
+}
+
+.inputOne {
+  margin-right: 8rem;
+}
+
+.inputTwo {
+  margin-left: 8rem;
+}
+
+.submitTwo {
+  margin: 4rem 3rem 0 3rem;
+  width: 90%;
 }

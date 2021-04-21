@@ -94,19 +94,26 @@
 
                 <!-- COMMENT FORM HERE -->
                 <div class="formSection">
-                    <form action="">
-                        <input type="text">
-                        <input type="email">
-                        <input type="textarea">
+                    <form action="postComment">
+                        <label class="visuallyHidden" for="username">Name</label>
+                        <input type="text" placeholder="Name" name="username" id="username">
+
+                        <label class="visuallyHidden" for="email">Email address</label>
+                        <input type="email" placeholder="Email address" name="email" id="email">
+                        
+                        <label class="visuallyHidden" for="comment">Comment</label>
+                        <textarea name="comment" placeholder="Comment" id="comment" cols="30" rows="10"></textarea>
+
+                        <button class="submitOne type="submit">Post Comment</button>
                     </form>
                 </div>
                 
             </div>
         </div>
-        <!-- FOOTER SECTION -->
-        <footer>
-            <p>Copyright © 2018 HackerYou</p>
-        </footer>
     </main>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
 </body>
 </html>
