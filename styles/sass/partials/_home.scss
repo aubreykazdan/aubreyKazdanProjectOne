@@ -94,7 +94,6 @@ button:hover {
     // SET THE 4 X 4 GRID
     .gridContainerAbout {
         height: 100%;
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -152,7 +151,6 @@ button:hover {
 
 .aboutPartThree {
     height: 50vh;
-    width: 100%;
     background-color: $ice;
         .flexContainerAboutPartThree {
             height: 100%;

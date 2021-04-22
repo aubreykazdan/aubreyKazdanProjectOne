@@ -97,16 +97,19 @@ button {
             content: "\2022";
             color: silver;
             padding-right: 2rem;
-            a {
-                color: $black;
-                text-transform: none;
-                text-decoration: none;
-                font-family: $secondaryFont;
-                font-size: 1.8rem;
-            } &.more {
-                font-weight: bold;                
-            }
         }
+    }
+
+.blogTextLeftContainer a {
+    color: $black;
+    text-transform: none;
+    text-decoration: none;
+    font-family: $secondaryFont;
+    font-size: 1.8rem;
+    }
+    
+    .more {
+        font-weight: bold;                
     }
 
 // THIS IS PAGE 3 ------------------------------------------------------------->

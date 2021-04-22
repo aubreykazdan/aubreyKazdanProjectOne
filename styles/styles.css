@@ -345,14 +345,16 @@ p {
   color: silver;
   padding-right: 2rem;
 }
-.recentPostsList li::before a {
+
+.blogTextLeftContainer a {
   color: #2C2C2C;
   text-transform: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
 }
-.recentPostsList li::before.more {
+
+.more {
   font-weight: bold;
 }
 
@@ -413,7 +415,7 @@ img {
 
 .aboutImageTwo {
   position: absolute;
-  left: 54%;
+  left: 50%;
   bottom: 25%;
   -webkit-box-shadow: -40px 35px 0 0 #FDFA69;
           box-shadow: -40px 35px 0 0 #FDFA69;
@@ -669,7 +671,6 @@ button:hover {
 }
 .aboutPartTwo .gridContainerAbout {
   height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -730,7 +731,6 @@ button:hover {
 
 .aboutPartThree {
   height: 50vh;
-  width: 100%;
   background-color: #EFFDF3;
 }
 .aboutPartThree .flexContainerAboutPartThree {
@@ -847,7 +847,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2rem 15rem 0 10rem;
+  margin: 2rem 6rem 0 10rem;
 }
 .blogMainRightContainer .blogTextRightTop .blogTextRight p {
   margin: 0;
@@ -963,7 +963,194 @@ main .contactMainContainer .formContactSection .contactForm {
 }
 
 @media screen and (max-width: 600px) {
-  .navBar ul {
-    overflow: hidden;
+  .navBar {
+    visibility: hidden;
+  }
+
+  .pageOneHeader {
+    height: 50vh;
+  }
+  .pageOneHeader .headerContainer h1 {
+    padding-bottom: 0;
+  }
+
+  .iconsSection {
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .aboutPartTwo {
+    height: 150vh;
+  }
+  .aboutPartTwo .unlockSkillsImg,
+.aboutPartTwo .gettingNewGearImg {
+    max-width: 500px;
+    height: auto;
+  }
+
+  .textContainerOne h3,
+.textContainerTwo h3 {
+    font-size: 2.3rem;
+  }
+
+  .iconsSection {
+    height: 120vh;
+  }
+  .iconsSection .flexContainerIcons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .iconsSection .flexContainerIcons h3 {
+    font-size: 2rem;
+  }
+
+  .tmpTextContainer h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .headerImageRight {
+    display: none;
+  }
+
+  .aboutPartThree {
+    height: 80vh;
+  }
+  .aboutPartThree .flexContainerAboutPartThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutPartThree .flexContainerAboutPartThree .tmpTextContainer {
+    padding-left: 0;
+    margin-top: 5rem;
+  }
+  .aboutPartThree .flexContainerAboutPartThree .tmpTextContainer h3 {
+    font-size: 2.5rem;
+  }
+
+  .aboutGallery {
+    height: 100vh;
+  }
+  .aboutGallery .flexContainerGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .aboutPartTwo {
+    height: 130vh;
+  }
+  .aboutPartTwo .gridContainerAbout {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 10rem;
+  }
+  .aboutPartTwo .gridContainerAbout .textContainerOne {
+    width: 60%;
+    margin: 5rem 0 0 5rem;
+  }
+  .aboutPartTwo .gridContainerAbout .textContainerTwo {
+    width: 60%;
+    margin: 5rem 0 5rem 5rem;
+  }
+
+  .aboutImageOneContainer,
+.aboutImageTwoContainer {
+    position: revert;
+  }
+
+  .aboutImageOne {
+    position: revert;
+    -webkit-box-shadow: 40rem 3rem 0 0 #FDFA69;
+            box-shadow: 40rem 3rem 0 0 #FDFA69;
+  }
+
+  .aboutImageTwo {
+    position: revert;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blogPictureSection {
+    height: 65vh;
+    position: relative;
+  }
+
+  .levitatingLens {
+    max-width: 300px;
+    height: auto;
+    position: relative;
+  }
+
+  .ladyImage {
+    max-width: 600px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1460px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  .aboutCaptured h2 {
+    font-size: 2rem;
+  }
+
+  .recentPosts {
+    font-size: 2rem;
+  }
+
+  .blogTextRight {
+    margin: 2rem 0rem 0rem 10rem;
   }
 }

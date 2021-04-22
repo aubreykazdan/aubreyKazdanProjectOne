@@ -14,10 +14,138 @@
 //  @media only screen and (min-width: 1200px) {...} 
 
 
+
+
+
+
 // NAVBAR RESPONSIVENESS
 
 @media screen and (max-width: 600px) {
-    .navBar ul {
-      overflow: hidden;
+    .navBar {
+      visibility: hidden;
+    }
+    .pageOneHeader {
+      height: 50vh;
+        .headerContainer h1 {
+          padding-bottom: 0;
+        }
+    }
+    .iconsSection {
+      height: 200vh;
+    }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 5rem;
+      padding-bottom: 0;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    
+    .aboutPartTwo {
+      height: 150vh;
+      .unlockSkillsImg,
+      .gettingNewGearImg {
+        max-width: 500px;
+        height: auto;
+      }
+    }
+    
+    .textContainerOne h3,
+    .textContainerTwo h3 {
+      font-size: 2.3rem;
+    }
+
+    .iconsSection {
+      height: 120vh;
+        .flexContainerIcons {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+            h3 {
+              font-size: 2rem;
+            }
+        }
+    }
+
+    .tmpTextContainer h3 {
+      font-size: 2rem;
+    }
+    
+  }
+
+  @media only screen and (max-width: 992px) {
+    h1 {
+      font-size: 7rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+
+    .headerImageRight {
+      display: none;
+    }
+
+    .aboutPartThree {
+      height: 80vh;
+        .flexContainerAboutPartThree {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+            .tmpTextContainer {
+              padding-left: 0;
+              margin-top: 5rem;
+                h3 {
+                  font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .aboutGallery {
+      height: 100vh;
+        .flexContainerGallery {
+          flex-direction: column;
+          align-items: center;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .aboutPartTwo {
+      height: 130vh;
+        .gridContainerAbout {
+          width: 85%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin: 0 10rem;
+            .textContainerOne {
+              width: 60%;
+              margin: 5rem 0 0 5rem;
+            }
+            .textContainerTwo {
+              width: 60%;
+              margin: 5rem 0 5rem 5rem;
+            }
+        }
+    }
+    .aboutImageOneContainer,
+    .aboutImageTwoContainer {
+        position: revert;
+    }
+    .aboutImageOne {
+      position: revert;
+      box-shadow: 40rem 3rem 0 0 $yellow;
+    }
+    .aboutImageTwo {
+      position: revert;
     }
   }
