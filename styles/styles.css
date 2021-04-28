@@ -269,6 +269,10 @@ a {
   line-height: 29px;
 }
 
+fieldset {
+  border: none;
+}
+
 .navBar a {
   font-size: 2rem;
   line-height: 29px;
@@ -507,7 +511,6 @@ textarea {
 
 .submitOne {
   margin-top: 4rem;
-  margin: 4rem 3rem 0 3rem;
   width: 100%;
 }
 
@@ -1138,8 +1141,9 @@ main .contactMainContainer .formContactSection .contactForm {
   }
 }
 @media only screen and (max-width: 1460px) {
-  h2 {
-    font-size: 3rem;
+  .ladyImage {
+    max-width: 700px;
+    height: auto;
   }
 
   .aboutCaptured h2 {

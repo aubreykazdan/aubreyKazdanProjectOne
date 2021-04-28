@@ -37,8 +37,10 @@
 }
 
 @media only screen and (max-width: 1460px) {
-    h2 {
-        font-size: 3rem;
+
+    .ladyImage {
+        max-width: 700px;
+        height: auto;
     }
 
     .aboutCaptured h2 {
