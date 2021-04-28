@@ -75,9 +75,10 @@ formElement.addEventListener('submit', function(event) {
     const commentInput = document.getElementById('comment').value;
     // save the container element to append the inputs to
     const commentContainer = document.querySelector('.commentTextContainer')
-    console.log(nameInput);
-    console.log(emailInput);
-    console.log(commentInput);
+    // console.log(nameInput);
+    // console.log(emailInput);
+    // console.log(commentInput);
+
 
     // create a new <div> element
         // create a new <img> element with placeholder img
@@ -112,6 +113,7 @@ formElement.addEventListener('submit', function(event) {
     newComment.appendChild(newCommentDate);
     newComment.appendChild(newCommentContent);
 
+    
     // allows the above elements to go into larger div container
     commentContainer.appendChild(newComment);
 })
